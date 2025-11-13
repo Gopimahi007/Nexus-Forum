@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - Nexus Forum</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="particles-bg" id="particles-bg"></div>
+
+  <header class="header">
+    <nav class="navbar glass">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-network-wired"></i>
+          <span class="logo-text">NEXUS<span class="logo-accent">FORUM</span></span>
+        </div>
+        
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i><span>Home</span>
+          </a></li>
+          <li><a href="forum.html" class="nav-link">
+            <i class="fas fa-comments"></i><span>Forums</span>
+          </a></li>
+          <li><a href="profile.html" class="nav-link active">
+            <i class="fas fa-user"></i><span>Profile</span>
+          </a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle cyber-btn-sm" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="profile-main">
+    <div class="container">
+      <!-- Profile Header -->
+      <div class="profile-header-card glass">
+        <div class="profile-cover">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=300&fit=crop" alt="Cover">
+        </div>
+        <div class="profile-info-wrapper">
+          <div class="profile-avatar-section">
+            <div class="profile-avatar">
+              <img src="https://i.pravatar.cc/200?img=12" alt="Avatar">
+              <button class="avatar-edit-btn">
+                <i class="fas fa-camera"></i>
+              </button>
+            </div>
+            <div class="profile-badges">
+              <span class="badge pro" title="Pro Member">
+                <i class="fas fa-crown"></i> PRO
+              </span>
+              <span class="badge verified" title="Verified">
+                <i class="fas fa-check-circle"></i>
+              </span>
+              <span class="badge moderator" title="Moderator">
+                <i class="fas fa-shield-alt"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="profile-details">
+            <h1 class="profile-name">
+              John "TechGuru" Doe
+              <button class="edit-profile-btn cyber-btn-sm">
+                <i class="fas fa-edit"></i> Edit
+              </button>
+            </h1>
+            <p class="profile-bio">Full-stack developer | AI enthusiast | Open source contributor 🚀</p>
+            <div class="profile-meta">
+              <span><i class="fas fa-map-marker-alt"></i> San Francisco, CA</span>
+              <span><i class="fas fa-calendar"></i> Joined October 2023</span>
+              <span><i class="fas fa-link"></i> <a href="#">johndoe.dev</a></span>
+            </div>
+          </div>
+
+          <div class="profile-stats">
+            <div class="stat-box">
+              <span class="stat-number">2,547</span>
+              <span class="stat-label">Posts</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">15.2K</span>
+              <span class="stat-label">Reputation</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">892</span>
+              <span class="stat-label">Followers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Content -->
+      <div class="profile-content-grid">
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+          <!-- Activity -->
+          <div class="sidebar-card glass">
+            <h3><i class="fas fa-chart-line"></i> Activity</h3>
+            <div class="activity-item">
+              <span class="activity-label">Threads Created</span>
+              <span class="activity-value">127</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-label">Replies Posted</span>
+              <span class="activity-value">2,420</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-label">Upvotes Received</span>
+              <span class="activity-value">8,934</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-label">Best Answers</span>
+              <span class="activity-value">342</span>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="sidebar-card glass">
+            <h3><i class="fas fa-code"></i> Skills</h3>
+            <div class="skills-tags">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
+
+          <!-- Achievements -->
+          <div class="sidebar-card glass">
+            <h3><i class="fas fa-trophy"></i> Achievements</h3>
+            <div class="achievements-grid">
+              <div class="achievement-badge gold" title="1000 Posts">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="achievement-badge silver" title="Helpful Member">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <div class="achievement-badge bronze" title="Early Adopter">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="achievement-badge platinum" title="Top Contributor">
+                <i class="fas fa-crown"></i>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="profile-main-content">
+          <!-- Tabs -->
+          <div class="profile-tabs glass">
+            <button class="tab-btn active" data-tab="posts">
+              <i class="fas fa-th-list"></i> Posts
+            </button>
+            <button class="tab-btn" data-tab="threads">
+              <i class="fas fa-comments"></i> Threads
+            </button>
+            <button class="tab-btn" data-tab="saved">
+              <i class="fas fa-bookmark"></i> Saved
+            </button>
+            <button class="tab-btn" data-tab="about">
+              <i class="fas fa-info-circle"></i> About
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content active" id="posts">
+            <!-- Post Card -->
+            <div class="post-card glass">
+              <div class="post-header">
+                <div class="post-category tech">Technology</div>
+                <div class="post-date">2 hours ago</div>
+              </div>
+              <h3 class="post-title">
+                <a href="thread.html">React 19: What's New and Exciting?</a>
+              </h3>
+              <p class="post-excerpt">Just tested React 19 beta and the new features are mind-blowing! The improved concurrent rendering...</p>
+              <div class="post-footer">
+                <div class="post-stats">
+                  <span><i class="fas fa-eye"></i> 1.2K views</span>
+                  <span><i class="fas fa-comment"></i> 45 replies</span>
+                  <span><i class="fas fa-heart"></i> 234 likes</span>
+                </div>
+                <button class="cyber-btn-sm">View Thread</button>
+              </div>
+            </div>
+
+            <div class="post-card glass">
+              <div class="post-header">
+                <div class="post-category gaming">Gaming</div>
+                <div class="post-date">1 day ago</div>
+              </div>
+              <h3 class="post-title">
+                <a href="thread.html">Best GPU for 4K Gaming in 2025</a>
+              </h3>
+              <p class="post-excerpt">After testing multiple GPUs, here's my comprehensive guide on choosing the best graphics card...</p>
+              <div class="post-footer">
+                <div class="post-stats">
+                  <span><i class="fas fa-eye"></i> 3.4K views</span>
+                  <span><i class="fas fa-comment"></i> 89 replies</span>
+                  <span><i class="fas fa-heart"></i> 456 likes</span>
+                </div>
+                <button class="cyber-btn-sm">View Thread</button>
+              </div>
+            </div>
+
+            <div class="post-card glass">
+              <div class="post-header">
+                <div class="post-category crypto">Crypto</div>
+                <div class="post-date">3 days ago</div>
+              </div>
+              <h3 class="post-title">
+                <a href="thread.html">Understanding DeFi: A Beginner's Guide</a>
+              </h3>
+              <p class="post-excerpt">DeFi can be overwhelming for newcomers. Here's everything you need to know to get started safely...</p>
+              <div class="post-footer">
+                <div class="post-stats">
+                  <span><i class="fas fa-eye"></i> 2.1K views</span>
+                  <span><i class="fas fa-comment"></i> 67 replies</span>
+                  <span><i class="fas fa-heart"></i> 389 likes</span>
+                </div>
+                <button class="cyber-btn-sm">View Thread</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="threads">
+            <div class="empty-state">
+              <i class="fas fa-comments"></i>
+              <p>Threads created by this user will appear here</p>
+            </div>
+          </div>
+
+          <div class="tab-content" id="saved">
+            <div class="empty-state">
+              <i class="fas fa-bookmark"></i>
+              <p>Saved posts will appear here</p>
+            </div>
+          </div>
+
+          <div class="tab-content" id="about">
+            <div class="about-section glass">
+              <h3>About Me</h3>
+              <p>Passionate developer with 8+ years of experience in building scalable web applications. I love exploring new technologies and sharing knowledge with the community.</p>
+              
+              <h3 style="margin-top: 20px;">Interests</h3>
+              <ul style="list-style: none; padding: 0;">
+                <li><i class="fas fa-code"></i> Web Development</li>
+                <li><i class="fas fa-brain"></i> Artificial Intelligence</li>
+                <li><i class="fas fa-rocket"></i> Space Technology</li>
+                <li><i class="fas fa-gamepad"></i> Gaming</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 NexusForum. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMessage">Success!</span>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

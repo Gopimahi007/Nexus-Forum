@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thread - Nexus Forum</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="particles-bg" id="particles-bg"></div>
+
+  <header class="header">
+    <nav class="navbar glass">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-network-wired"></i>
+          <span class="logo-text">NEXUS<span class="logo-accent">FORUM</span></span>
+        </div>
+        
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i><span>Home</span>
+          </a></li>
+          <li><a href="forum.html" class="nav-link active">
+            <i class="fas fa-comments"></i><span>Forums</span>
+          </a></li>
+          <li><a href="profile.html" class="nav-link">
+            <i class="fas fa-user"></i><span>Profile</span>
+          </a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle cyber-btn-sm" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="thread-main">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb glass">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="forum.html">Forums</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="#">Technology</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Current Thread</span>
+      </nav>
+
+      <!-- Thread Header -->
+      <div class="thread-header glass">
+        <div class="thread-tags">
+          <span class="tag tech">JavaScript</span>
+          <span class="tag tech">React</span>
+          <span class="tag tech">Frontend</span>
+        </div>
+        <h1 class="thread-title">What's Your Favorite Programming Language and Why?</h1>
+        <div class="thread-meta">
+          <div class="thread-author">
+            <img src="https://i.pravatar.cc/50?img=5" alt="Author">
+            <div>
+              <span class="author-name">TechGuru</span>
+              <span class="author-role">Pro Member</span>
+            </div>
+          </div>
+          <div class="thread-stats">
+            <span><i class="fas fa-eye"></i> 5.2K views</span>
+            <span><i class="fas fa-comment"></i> 124 replies</span>
+            <span><i class="fas fa-clock"></i> 2 days ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="thread-layout">
+        <!-- Main Thread Content -->
+        <div class="thread-content">
+          <!-- Original Post -->
+          <div class="post-item glass">
+            <div class="post-sidebar">
+              <div class="post-avatar">
+                <img src="https://i.pravatar.cc/80?img=5" alt="User">
+              </div>
+              <div class="post-actions-vertical">
+                <button class="vote-btn upvote" data-vote="up">
+                  <i class="fas fa-arrow-up"></i>
+                </button>
+                <span class="vote-count">234</span>
+                <button class="vote-btn downvote" data-vote="down">
+                  <i class="fas fa-arrow-down"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="post-main">
+              <div class="post-header-info">
+                <div class="post-author-details">
+                  <h3 class="post-author-name">TechGuru</h3>
+                  <span class="post-author-badge pro">PRO</span>
+                  <span class="post-author-title">Senior Developer</span>
+                </div>
+                <div class="post-timestamp">
+                  <i class="fas fa-clock"></i> Posted 2 days ago
+                </div>
+              </div>
+
+              <div class="post-content-body">
+                <p>I've been coding for over 10 years now, and I've used countless programming languages. But JavaScript keeps pulling me back!</p>
+                
+                <p>Here's why I love JavaScript:</p>
+                <ul>
+                  <li>🚀 Runs everywhere - browser, server, mobile, desktop</li>
+                  <li>📦 Massive ecosystem with npm</li>
+                  <li>⚡ Great performance with modern engines</li>
+                  <li>🔄 Constant innovation and evolution</li>
+                  <li>👥 Amazing community support</li>
+                </ul>
+
+                <p>What's your favorite language? Let me know your thoughts!</p>
+
+                <div class="code-block">
+                  <div class="code-header">
+                    <span>JavaScript</span>
+                    <button class="copy-code"><i class="fas fa-copy"></i></button>
+                  </div>
+                  <pre><code>const greeting = (name) => {
+  return `Hello, ${name}! Welcome to JavaScript!`;
+};
+
+console.log(greeting("Developer"));</code></pre>
+                </div>
+              </div>
+
+              <div class="post-footer-actions">
+                <button class="action-btn">
+                  <i class="fas fa-reply"></i> Reply
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-share"></i> Share
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-bookmark"></i> Save
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-flag"></i> Report
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reply Post -->
+          <div class="post-item glass reply">
+            <div class="post-sidebar">
+              <div class="post-avatar">
+                <img src="https://i.pravatar.cc/80?img=8" alt="User">
+              </div>
+              <div class="post-actions-vertical">
+                <button class="vote-btn upvote" data-vote="up">
+                  <i class="fas fa-arrow-up"></i>
+                </button>
+                <span class="vote-count">156</span>
+                <button class="vote-btn downvote" data-vote="down">
+                  <i class="fas fa-arrow-down"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="post-main">
+              <div class="post-header-info">
+                <div class="post-author-details">
+                  <h3 class="post-author-name">CodeMaster</h3>
+                  <span class="post-author-badge verified">✓</span>
+                  <span class="post-author-title">Python Enthusiast</span>
+                </div>
+                <div class="post-timestamp">
+                  <i class="fas fa-clock"></i> 1 day ago
+                </div>
+              </div>
+
+              <div class="post-content-body">
+                <p>Python is my go-to language! Here's why:</p>
+                
+                <blockquote>
+                  <i class="fas fa-quote-left"></i>
+                  Simple is better than complex. Complex is better than complicated.
+                  <cite>- The Zen of Python</cite>
+                </blockquote>
+
+                <p>Python's readability and versatility make it perfect for everything from web dev to AI/ML. Plus, the community is incredible! 🐍</p>
+
+                <div class="code-block">
+                  <div class="code-header">
+                    <span>Python</span>
+                    <button class="copy-code"><i class="fas fa-copy"></i></button>
+                  </div>
+                  <pre><code>def greet(name):
+    return f"Hello, {name}! Python rocks!"
+
+print(greet("Developer"))</code></pre>
+                </div>
+              </div>
+
+              <div class="post-footer-actions">
+                <button class="action-btn">
+                  <i class="fas fa-reply"></i> Reply
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-share"></i> Share
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-bookmark"></i> Save
+                </button>
+                <button class="action-btn liked">
+                  <i class="fas fa-heart"></i> Liked
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reply Post -->
+          <div class="post-item glass reply">
+            <div class="post-sidebar">
+              <div class="post-avatar">
+                <img src="https://i.pravatar.cc/80?img=12" alt="User">
+              </div>
+              <div class="post-actions-vertical">
+                <button class="vote-btn upvote" data-vote="up">
+                  <i class="fas fa-arrow-up"></i>
+                </button>
+                <span class="vote-count">89</span>
+                <button class="vote-btn downvote" data-vote="down">
+                  <i class="fas fa-arrow-down"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="post-main">
+              <div class="post-header-info">
+                <div class="post-author-details">
+                  <h3 class="post-author-name">RustFanatic</h3>
+                  <span class="post-author-badge moderator">MOD</span>
+                  <span class="post-author-title">Systems Programmer</span>
+                </div>
+                <div class="post-timestamp">
+                  <i class="fas fa-clock"></i> 12 hours ago
+                </div>
+              </div>
+
+              <div class="post-content-body">
+                <p>Has anyone tried Rust? It's become my favorite for systems programming:</p>
+                
+                <ul>
+                  <li>⚡ Blazing fast performance</li>
+                  <li>🛡️ Memory safety without garbage collection</li>
+                  <li>🔧 Great tooling (cargo is amazing!)</li>
+                  <li>🎯 Fearless concurrency</li>
+                </ul>
+
+                <p>The learning curve is steep, but totally worth it! 🦀</p>
+              </div>
+
+              <div class="post-footer-actions">
+                <button class="action-btn">
+                  <i class="fas fa-reply"></i> Reply
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-share"></i> Share
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-bookmark"></i> Save
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Load More -->
+          <button class="cyber-btn secondary full-width" style="margin-top: 20px;">
+            <i class="fas fa-chevron-down"></i> Load More Replies
+          </button>
+
+          <!-- Reply Form -->
+          <div class="reply-form-section glass">
+            <h3><i class="fas fa-reply"></i> Post Your Reply</h3>
+            <form class="reply-form">
+              <div class="form-group">
+                <textarea class="cyber-textarea" rows="6" placeholder="Share your thoughts..."></textarea>
+              </div>
+              <div class="form-toolbar">
+                <div class="toolbar-actions">
+                  <button type="button" class="toolbar-btn" title="Bold">
+                    <i class="fas fa-bold"></i>
+                  </button>
+                  <button type="button" class="toolbar-btn" title="Italic">
+                    <i class="fas fa-italic"></i>
+                  </button>
+                  <button type="button" class="toolbar-btn" title="Code">
+                    <i class="fas fa-code"></i>
+                  </button>
+                  <button type="button" class="toolbar-btn" title="Link">
+                    <i class="fas fa-link"></i>
+                  </button>
+                  <button type="button" class="toolbar-btn" title="Image">
+                    <i class="fas fa-image"></i>
+                  </button>
+                </div>
+                <button type="submit" class="cyber-btn primary">
+                  <i class="fas fa-paper-plane"></i> Post Reply
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="thread-sidebar">
+          <!-- Thread Actions -->
+          <div class="sidebar-card glass">
+            <h3>Thread Actions</h3>
+            <button class="cyber-btn secondary full-width">
+              <i class="fas fa-bookmark"></i> Save Thread
+            </button>
+            <button class="cyber-btn secondary full-width">
+              <i class="fas fa-bell"></i> Subscribe
+            </button>
+            <button class="cyber-btn secondary full-width">
+              <i class="fas fa-share-alt"></i> Share
+            </button>
+          </div>
+
+          <!-- Related Threads -->
+          <div class="sidebar-card glass">
+            <h3><i class="fas fa-link"></i> Related Threads</h3>
+            <div class="related-thread">
+              <a href="#">Best IDE for JavaScript Development</a>
+              <span class="related-meta">234 replies</span>
+            </div>
+            <div class="related-thread">
+              <a href="#">TypeScript vs JavaScript in 2025</a>
+              <span class="related-meta">189 replies</span>
+            </div>
+            <div class="related-thread">
+              <a href="#">React 19: New Features Overview</a>
+              <span class="related-meta">456 replies</span>
+            </div>
+          </div>
+
+          <!-- Top Contributors -->
+          <div class="sidebar-card glass">
+            <h3><i class="fas fa-users"></i> Top Contributors</h3>
+            <div class="contributor-item">
+              <img src="https://i.pravatar.cc/40?img=3" alt="User">
+              <div>
+                <strong>DevExpert</strong>
+                <span>1.2K posts</span>
+              </div>
+            </div>
+            <div class="contributor-item">
+              <img src="https://i.pravatar.cc/40?img=7" alt="User">
+              <div>
+                <strong>CodeNinja</strong>
+                <span>890 posts</span>
+              </div>
+            </div>
+            <div class="contributor-item">
+              <img src="https://i.pravatar.cc/40?img=9" alt="User">
+              <div>
+                <strong>WebWizard</strong>
+                <span>674 posts</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 NexusForum. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMessage">Success!</span>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

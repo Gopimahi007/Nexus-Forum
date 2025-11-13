@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forums - Nexus Forum</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="particles-bg" id="particles-bg"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <nav class="navbar glass">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-network-wired"></i>
+          <span class="logo-text">NEXUS<span class="logo-accent">FORUM</span></span>
+        </div>
+        
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i><span>Home</span>
+          </a></li>
+          <li><a href="forum.html" class="nav-link active">
+            <i class="fas fa-comments"></i><span>Forums</span>
+          </a></li>
+          <li><a href="login.html" class="nav-link">
+            <i class="fas fa-sign-in-alt"></i><span>Login</span>
+          </a></li>
+          <li><a href="signup.html" class="nav-link">
+            <i class="fas fa-user-plus"></i><span>Signup</span>
+          </a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="search-btn cyber-btn-sm" id="searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="theme-toggle cyber-btn-sm" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title gradient-text">Forum Categories</h1>
+      <p class="page-subtitle">Explore discussions across different topics</p>
+    </div>
+  </section>
+
+  <main class="forum-main">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar glass">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fas fa-th"></i> All
+          </button>
+          <button class="filter-btn" data-filter="popular">
+            <i class="fas fa-fire"></i> Popular
+          </button>
+          <button class="filter-btn" data-filter="recent">
+            <i class="fas fa-clock"></i> Recent
+          </button>
+          <button class="filter-btn" data-filter="answered">
+            <i class="fas fa-check"></i> Answered
+          </button>
+        </div>
+        <button class="cyber-btn primary" id="newThreadBtn">
+          <i class="fas fa-plus"></i> New Thread
+        </button>
+      </div>
+
+      <!-- Forum Categories Grid -->
+      <div class="forum-categories">
+        <div class="forum-category-card glass" data-aos="fade-up">
+          <div class="category-header">
+            <div class="category-icon-wrapper tech">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="category-info">
+              <h3>Programming & Development</h3>
+              <p>Discuss coding, frameworks, and software development</p>
+            </div>
+          </div>
+          <div class="category-stats">
+            <div class="stat">
+              <i class="fas fa-comment-dots"></i>
+              <span>15.2K Threads</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-users"></i>
+              <span>8.5K Members</span>
+            </div>
+          </div>
+          <div class="latest-thread">
+            <i class="fas fa-circle online-dot"></i>
+            <span>Latest: <strong>React 19 Features</strong> by TechGuru</span>
+          </div>
+          <a href="thread.html?category=programming" class="category-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="forum-category-card glass" data-aos="fade-up" data-aos-delay="100">
+          <div class="category-header">
+            <div class="category-icon-wrapper gaming">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="category-info">
+              <h3>Gaming Community</h3>
+              <p>Share gaming experiences, tips, and reviews</p>
+            </div>
+          </div>
+          <div class="category-stats">
+            <div class="stat">
+              <i class="fas fa-comment-dots"></i>
+              <span>22.8K Threads</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-users"></i>
+              <span>12.3K Members</span>
+            </div>
+          </div>
+          <div class="latest-thread">
+            <i class="fas fa-circle online-dot"></i>
+            <span>Latest: <strong>Best GPU for 2025</strong> by GamerPro</span>
+          </div>
+          <a href="thread.html?category=gaming" class="category-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="forum-category-card glass" data-aos="fade-up" data-aos-delay="200">
+          <div class="category-header">
+            <div class="category-icon-wrapper crypto">
+              <i class="fab fa-bitcoin"></i>
+            </div>
+            <div class="category-info">
+              <h3>Cryptocurrency & Blockchain</h3>
+              <p>Explore crypto trading, NFTs, and Web3 technology</p>
+            </div>
+          </div>
+          <div class="category-stats">
+            <div class="stat">
+              <i class="fas fa-comment-dots"></i>
+              <span>9.4K Threads</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-users"></i>
+              <span>5.7K Members</span>
+            </div>
+          </div>
+          <div class="latest-thread">
+            <i class="fas fa-circle online-dot"></i>
+            <span>Latest: <strong>ETH 2.0 Update</strong> by CryptoKing</span>
+          </div>
+          <a href="thread.html?category=crypto" class="category-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="forum-category-card glass" data-aos="fade-up" data-aos-delay="300">
+          <div class="category-header">
+            <div class="category-icon-wrapper design">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="category-info">
+              <h3>Design & Creativity</h3>
+              <p>UI/UX design, graphic design, and creative projects</p>
+            </div>
+          </div>
+          <div class="category-stats">
+            <div class="stat">
+              <i class="fas fa-comment-dots"></i>
+              <span>11.6K Threads</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-users"></i>
+              <span>7.2K Members</span>
+            </div>
+          </div>
+          <div class="latest-thread">
+            <i class="fas fa-circle online-dot"></i>
+            <span>Latest: <strong>Figma Tips 2025</strong> by Designer</span>
+          </div>
+          <a href="thread.html?category=design" class="category-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="forum-category-card glass" data-aos="fade-up" data-aos-delay="400">
+          <div class="category-header">
+            <div class="category-icon-wrapper science">
+              <i class="fas fa-flask"></i>
+            </div>
+            <div class="category-info">
+              <h3>Science & Technology</h3>
+              <p>Discuss latest scientific discoveries and innovations</p>
+            </div>
+          </div>
+          <div class="category-stats">
+            <div class="stat">
+              <i class="fas fa-comment-dots"></i>
+              <span>7.3K Threads</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-users"></i>
+              <span>4.8K Members</span>
+            </div>
+          </div>
+          <div class="latest-thread">
+            <i class="fas fa-circle online-dot"></i>
+            <span>Latest: <strong>Quantum Computing</strong> by Scientist</span>
+          </div>
+          <a href="thread.html?category=science" class="category-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="forum-category-card glass" data-aos="fade-up" data-aos-delay="500">
+          <div class="category-header">
+            <div class="category-icon-wrapper business">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="category-info">
+              <h3>Business & Entrepreneurship</h3>
+              <p>Startup advice, marketing strategies, and business growth</p>
+            </div>
+          </div>
+          <div class="category-stats">
+            <div class="stat">
+              <i class="fas fa-comment-dots"></i>
+              <span>13.9K Threads</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-users"></i>
+              <span>9.1K Members</span>
+            </div>
+          </div>
+          <div class="latest-thread">
+            <i class="fas fa-circle online-dot"></i>
+            <span>Latest: <strong>SaaS Metrics</strong> by Founder</span>
+          </div>
+          <a href="thread.html?category=business" class="category-link">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- New Thread Modal -->
+  <div class="modal" id="newThreadModal">
+    <div class="modal-content glass">
+      <div class="modal-header">
+        <h3><i class="fas fa-plus-circle"></i> Create New Thread</h3>
+        <button class="modal-close" id="closeThreadModal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <form class="thread-form">
+        <div class="form-group">
+          <label>Category</label>
+          <select class="cyber-input">
+            <option>Programming & Development</option>
+            <option>Gaming Community</option>
+            <option>Cryptocurrency & Blockchain</option>
+            <option>Design & Creativity</option>
+            <option>Science & Technology</option>
+            <option>Business & Entrepreneurship</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Thread Title</label>
+          <input type="text" class="cyber-input" placeholder="Enter an engaging title...">
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea class="cyber-textarea" rows="6" placeholder="Share your thoughts..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Tags</label>
+          <input type="text" class="cyber-input" placeholder="Add tags (separated by commas)">
+        </div>
+        <button type="submit" class="cyber-btn primary full-width">
+          <i class="fas fa-paper-plane"></i> Post Thread
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 NexusForum. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMessage">Success!</span>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
